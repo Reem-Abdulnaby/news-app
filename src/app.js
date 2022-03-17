@@ -35,7 +35,7 @@ request({url,json:true},(error,responce)=>{
 else if (responce.body.articles.length==0){
     return   app.get('/',(req,res)=>{
 
-        res.send({articles:responce.body.articles})
+        res.send({message:'No News Available on this link please Check the link And Try Again'})
 })
    
 }
